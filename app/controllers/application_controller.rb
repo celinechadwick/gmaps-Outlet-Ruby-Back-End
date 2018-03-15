@@ -6,4 +6,10 @@ class ApplicationController < ActionController::Base
 #         @user = JWT.decode(token, nil, false)
 #       end
 #   end
+config.middleware.insert_before 0, "Rack::Cors" do
+  allow do
+    origins '*'
+    resource '*', :headers => :any, :methods => [:get, :post, :options]
+  end
+end
 end
