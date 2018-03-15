@@ -15,7 +15,8 @@ User.create([
 
   Place.destroy_all
   Place.create([
-    {title:'Upstairs', business:'Itaewon', description:'Ask to charge behind the bar', lat:'40.730610', lng:'-73.935242',upvote:'4',downvote:'2'}
+    {title:'Upstairs', business:'Itaewon', description:'Ask to charge behind the bar', lat:'40.730610', lng:'-73.935242',upvote:'4',downvote:'2', }
     ])
-
-  
+    Place.create([
+      {title:'Upstairs', business:'Space Billiards', description:'Ask to charge behind the bar', lat:'40.730610', lng:'-75.935242',upvote:'6',downvote:'2'}
+      ])

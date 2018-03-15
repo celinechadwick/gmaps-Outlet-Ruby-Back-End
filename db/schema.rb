@@ -45,4 +45,12 @@ ActiveRecord::Schema.define(version: 20180313193919) do
     t.datetime "updated_at"
   end
 
+  create_table "users_places", id: false, force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "place_id"
+  end
+
+  add_index "users_places", ["place_id"], name: "index_users_places_on_place_id"
+  add_index "users_places", ["user_id"], name: "index_users_places_on_user_id"
+
 end

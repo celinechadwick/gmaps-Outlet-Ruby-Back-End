@@ -41,7 +41,7 @@ end
 
   private
 
-  def artwork_params
+  def place_params
       params.require(:place).permit(:name, :address, :lat, :lng, :description, :upvote, :downvote)
   end
 
