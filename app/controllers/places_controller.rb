@@ -29,14 +29,10 @@ class PlacesController < ApplicationController
   end
 
 
-def create
-  place = User
-  .find(params[:user_id])
-  .places
-  .create(place_params)
+  def create
+      place = Place.create(place_params)
 
-  render :json => place, status: 201
-end
+      render :json => place, status: 201
 
 
   private
@@ -44,5 +40,7 @@ end
   def place_params
       params.require(:place).permit(:name, :address, :lat, :lng, :description, :upvote, :downvote)
   end
+
+end
 
 end

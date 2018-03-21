@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 User.destroy_all
 User.create([
-  { email:'cvc1230@gmail.com', password_digest:'password'}
+  { email:'cvc1230@gmail.com', password_digest:'password', myplaces:'1'}
   ])
 User.create([
-  {email:'parkjimin@bts.com', password_digest:'password'}
+  {email:'parkjimin@bts.com', password_digest:'password', myplaces:'1,2'}
   ])
 
   Place.destroy_all
