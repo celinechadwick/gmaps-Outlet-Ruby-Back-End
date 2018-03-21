@@ -7,6 +7,10 @@ class PlacesController < ApplicationController
       render :json => places, status: 200
     end
 
+    def show
+        render :json => Place.find(params[:id]), status: 200
+    end
+
 
   def update
       place_updated = Place.find(params[:id]).update_attributes(place_params)
