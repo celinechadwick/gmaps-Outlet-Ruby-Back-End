@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'pg', '~> 0.18'
+# gem 'sqlite3'
 #allow cross origin requests
 gem 'rack-cors'
 
